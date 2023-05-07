@@ -21,15 +21,6 @@ html{
     box-sizing: border-box;
 }
 
-/* Responsive */
-
-@media (max-width: 740px ){
-    .app{
-        display: block;
-        zoom: 30%;
-    }
-}
-
 .grid{
     width: 1200px;
     max-width: 100%;
@@ -191,3 +182,111 @@ html{
     
 }
 
+/* Responsive */
+
+  /* mobile */
+  @media (max-width: 739px){ 
+    .grid__column-2{
+        width: 30%;
+    }
+    .grid__column-10{
+        width: 100%;
+    }
+    .grid__column-2_4{
+        width: 50%;
+    }
+    .app{
+        zoom: 0.7;
+    }
+    .header-with-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .home-filter{
+        justify-content: center;
+    }
+    .footer{
+        padding: 0 15px;
+        height: calc(100vh + 450px);
+    }
+    .grid__row{
+        padding: 0 15px;
+    }
+    .grid{
+        position: relative;
+        height: 100%;
+        
+    }
+    .footer__download{
+        margin-bottom: 25px;
+    }
+    .header__search{
+        background-color: transparent;
+    }
+    .header__search-btn-search{
+       background-color: transparent;
+       position: absolute;
+       left: 0;
+       
+    }
+    .header__search-btn-search-icon{
+        font-size: 24px;
+    }
+    
+    .header__logo{
+        position: absolute;
+        text-align: center;
+    }
+    .select-input{
+        display: none;
+    }
+    .home-filter__page{
+        display: none;
+    }
+    
+    .header__search-input-warp{
+        display: none;
+    }
+    .header__search-selection{
+        display: none;
+    }
+    .header__navbar{
+        display: none;
+    }
+    .category{
+        display: none;
+    }
+    .footer__nation-info{
+        display: none;
+    }
+    .footer__bottom{
+        display: none;
+    }
+  }
+  
+  /* tablet */
+  @media (min-width: 740px ) and (max-width:1023px){
+    .grid__column-2_4{
+        width: 25%;
+    }
+    .grid__row{
+      padding: 0 15px;
+    }
+    .footer{
+      height: calc(100vh + 370px);
+    }
+    .footer__download{
+        margin-bottom: 25px;
+    }
+    .footer__license{
+        font-size: 1.3rem;
+    }
+    .footer__policy-list{
+      padding-left: 0;
+    }
+    .footer__policy-item-link{
+        font-size: 1.1rem;
+    }
+}
